@@ -1,0 +1,7 @@
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\ScheduledTaskAgentLocationService\Bin\Debug\ScheduledTaskAgentLocationService.dll
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\ScheduledTaskAgentLocationService\Bin\Debug\ScheduledTaskAgentLocationService.pdb
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\ScheduledTaskAgentLocationService\Bin\Debug\Microsoft.Phone.Controls.Maps.dll
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\ScheduledTaskAgentLocationService\Bin\Debug\Microsoft.Phone.Controls.Maps.xml
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\ScheduledTaskAgentLocationService\obj\Debug\ScheduledTaskAgentLocationService.csprojResolveAssemblyReference.cache
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\ScheduledTaskAgentLocationService\obj\Debug\ScheduledTaskAgentLocationService.dll
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\ScheduledTaskAgentLocationService\obj\Debug\ScheduledTaskAgentLocationService.pdb

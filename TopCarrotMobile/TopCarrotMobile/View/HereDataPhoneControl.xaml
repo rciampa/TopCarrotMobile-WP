@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="TopCarrotMobile.HereDataPhoneControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DataContext="{d:DesignData ../SampleData/HereSampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480" Name="ucHereData" Loaded="ucHereData_Loaded">
+    
+    <Grid x:Name="LayoutRoot" DataContext="{Binding}">
+        <StackPanel Height="100" HorizontalAlignment="Left" Name="stkpHeaderContainer" VerticalAlignment="Top" Width="480" Orientation="Horizontal">
+            <Image Height="90" Name="imgHeaderLogo" Stretch="Fill" Width="180" Source="/TopCarrotMobile;component/Media/Images/HereHeaderImageBlank.png" />
+            <StackPanel Height="100" Name="stkpHeaderText" Width="298" MaxWidth="286" Margin="10,0,0,0">
+                <TextBlock Height="Auto" Name="txtbAddressLine" Text="16007 Crenshaw Blvd" />
+                <TextBlock Height="Auto" Name="txtbCityRegionZip" Text="Torrance, CA 90506" />
+                <TextBlock Height="Auto" Name="txtbCoutnry" Text="United States" />
+            </StackPanel>
+        </StackPanel>
+        <ListBox Height="Auto" HorizontalAlignment="Left" Margin="0,104,0,0" Name="lstHereCropItems" VerticalAlignment="Top" Width="479" ItemsSource="{Binding Path=MyHereLocationData}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Name="stkCropItemContainer" Margin="0">
+                        <Image Source="/TopCarrotMobile;component/Media/Images/tcmNoImage1.png" Name="imgItemPicture"></Image>
+                        <StackPanel Orientation="Vertical" Name="stkpCropTextOuter" Margin="10,0,0,0">
+                            <TextBlock Text="{Binding Path=Name}" Name="txtbCommodityName" />
+                            <StackPanel Orientation="Horizontal" Name="stkpItemIdentifers">
+                                <TextBlock Text="{Binding Path=Plu}" Name="txtbPlu" />
+                                <TextBlock Text="{Binding Path=CropId}" Name="txtbCropNumber" Margin="20,0,0,0" />
+                            </StackPanel>
+                            <TextBlock TextWrapping="Wrap" Width="350" Text="{Binding Path=Size}" Name="txtbItemSize" />
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>

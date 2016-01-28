@@ -1,0 +1,57 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="TopCarrotMobile.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:TopCarrotMobile.AppCode"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True" shell:SystemTray.Opacity="0" AllowDrop="False" Loaded="PhoneApplicationPage_Loaded">
+    <phone:PhoneApplicationPage.Resources>
+        <local:MobileAppSettings x:Key="appSettings"></local:MobileAppSettings>
+    </phone:PhoneApplicationPage.Resources>
+        <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="{StaticResource AppRootGridBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Top Carrot" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="Login" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,32,0,0" Name="textBlock1" Text="Username:" VerticalAlignment="Top" Width="111" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="-2,54,0,0" Name="txtbxUserName" Text="{Binding Path=UsernameSetting, Mode=TwoWay, Source={StaticResource appSettings}}" VerticalAlignment="Top" Width="442">
+                <TextBox.InputScope>
+                    <InputScope />
+                </TextBox.InputScope>
+            </TextBox>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,132,0,0" Name="textBlock2" Text="Password:" VerticalAlignment="Top" Width="111" />
+            <PasswordBox Height="72" HorizontalAlignment="Left" Margin="-2,154,0,0" Name="passwordBox1" VerticalAlignment="Top" Width="442" Password="{Binding Source={StaticResource appSettings}, Path=PasswordSetting}" />
+            <CheckBox Content="Remember Password" Height="72" HorizontalAlignment="Left" Margin="12,250,0,0" Name="chkbxSavePassword" VerticalAlignment="Top" IsChecked="{Binding Path=SaveUserPassword, Mode=TwoWay, Source={StaticResource appSettings}}" />
+            <TextBlock Height="38" HorizontalAlignment="Left" Margin="35,356,0,0" Name="textBlock3" Text="" VerticalAlignment="Top" Width="360" />
+        </Grid>
+    </Grid>
+ 
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" Opacity="0.25">
+            <shell:ApplicationBarIconButton x:Name="menBtnOk" IconUri="/Icons/appbar.check.rest.png"  Text="login" Click="menBtnOk_Click" />
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem x:Name="menBtnHelp" Text="Help" Click="menBtnHelp_Click" />
+                <shell:ApplicationBarMenuItem x:Name="menBtnAbout" Text="about" Click="menBtnAbout_Click" />
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

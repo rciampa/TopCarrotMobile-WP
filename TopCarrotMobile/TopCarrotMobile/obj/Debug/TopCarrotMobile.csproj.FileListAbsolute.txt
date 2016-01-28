@@ -1,0 +1,14 @@
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\TopCarrotMobile\obj\Debug\TopCarrotMobile.csprojResolveAssemblyReference.cache
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\TopCarrotMobile\obj\Debug\App.g.cs
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\TopCarrotMobile\obj\Debug\About.g.cs
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\TopCarrotMobile\obj\Debug\DetailsPage.g.cs
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\TopCarrotMobile\obj\Debug\Help.g.cs
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\TopCarrotMobile\obj\Debug\Login.g.cs
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\TopCarrotMobile\obj\Debug\MainPage.g.cs
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\TopCarrotMobile\obj\Debug\PushNotice.g.cs
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\TopCarrotMobile\obj\Debug\SearchBy.g.cs
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\TopCarrotMobile\obj\Debug\Settings.g.cs
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\TopCarrotMobile\obj\Debug\SettingsHelp.g.cs
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\TopCarrotMobile\obj\Debug\View\HereRoadPhoneControl.g.cs
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\TopCarrotMobile\obj\Debug\View\HereDataPhoneControl.g.cs
+C:\Users\RichardD\Documents\Visual Studio 2012\Projects\TopCarrotMobile\TopCarrotMobile\obj\Debug\TopCarrotMobile.g.resources

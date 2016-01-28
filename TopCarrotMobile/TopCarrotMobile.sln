@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopCarrotMobile", "TopCarrotMobile\TopCarrotMobile.csproj", "{460D3EBB-209C-4ADD-9AA9-E19B1F958632}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduledTaskAgentLocationService", "ScheduledTaskAgentLocationService\ScheduledTaskAgentLocationService.csproj", "{7B4FB0F0-A7FB-4DE4-835D-FF85ADC7729A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://itoutfitters.tfspreview.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TopCarrotMobile\\TopCarrotMobile.csproj
+		SccProjectName1 = TopCarrotMobile
+		SccLocalPath1 = TopCarrotMobile
+		SccProjectUniqueName2 = ScheduledTaskAgentLocationService\\ScheduledTaskAgentLocationService.csproj
+		SccProjectName2 = ScheduledTaskAgentLocationService
+		SccLocalPath2 = ScheduledTaskAgentLocationService
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{460D3EBB-209C-4ADD-9AA9-E19B1F958632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{460D3EBB-209C-4ADD-9AA9-E19B1F958632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{460D3EBB-209C-4ADD-9AA9-E19B1F958632}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{460D3EBB-209C-4ADD-9AA9-E19B1F958632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{460D3EBB-209C-4ADD-9AA9-E19B1F958632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{460D3EBB-209C-4ADD-9AA9-E19B1F958632}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7B4FB0F0-A7FB-4DE4-835D-FF85ADC7729A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B4FB0F0-A7FB-4DE4-835D-FF85ADC7729A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B4FB0F0-A7FB-4DE4-835D-FF85ADC7729A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B4FB0F0-A7FB-4DE4-835D-FF85ADC7729A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

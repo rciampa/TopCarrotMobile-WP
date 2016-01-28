@@ -1,0 +1,44 @@
+﻿<phone:PhoneApplicationPage 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+	xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+	x:Class="TopCarrotMobile.Help"
+	FontFamily="{StaticResource PhoneFontFamilyNormal}"
+	FontSize="{StaticResource PhoneFontSizeNormal}"
+	Foreground="{StaticResource PhoneForegroundBrush}"
+	SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
+	shell:SystemTray.IsVisible="True" shell:SystemTray.Opacity="0" 
+    UseLayoutRounding="True" Loaded="Help_Loaded">
+
+	<!--LayoutRoot contains the root grid where all other page content is placed-->
+	<Grid x:Name="LayoutRoot" DataContext="{Binding}">
+		<Grid.Background>
+			<LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+				<GradientStop Color="#FF1FC411"/>
+				<GradientStop Color="#FFEDF3ED" Offset="1"/>
+			</LinearGradientBrush>
+		</Grid.Background>
+		<controls:Panorama Title="Top Carrot">
+
+			<!--Panorama item one-->
+			<controls:PanoramaItem Header="General" Name="piGeneral">
+				<Grid DataContext="{Binding}" />
+			</controls:PanoramaItem>
+            <controls:PanoramaItem Header="Search" Orientation="Vertical" Name="piSearch">
+                <Grid />
+            </controls:PanoramaItem>
+            <controls:PanoramaItem Header="Accounts" Name="piAccounts">
+                <Grid />
+            </controls:PanoramaItem>
+            <!--Panorama item two-->
+			<controls:PanoramaItem Header="Favorites" Name="piFavorites">
+				<Grid/>
+			</controls:PanoramaItem>
+		</controls:Panorama>
+	</Grid>
+</phone:PhoneApplicationPage>

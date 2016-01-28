@@ -1,0 +1,45 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="1.0">
+    <Schema Namespace="TopCarrotModel" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityType Name="CommodityPluCode">
+        <Key>
+          <PropertyRef Name="PLU" />
+        </Key>
+        <Property Name="PLUId" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="PLU" Type="Edm.String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+        <Property Name="Commodity" Type="Edm.String" Nullable="true" MaxLength="50" Unicode="true" FixedLength="false" />
+        <Property Name="Variety" Type="Edm.String" Nullable="true" MaxLength="150" Unicode="true" FixedLength="false" />
+        <Property Name="Size" Type="Edm.String" Nullable="true" MaxLength="25" Unicode="true" FixedLength="false" />
+        <Property Name="Restrictions" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Botanical" Type="Edm.String" Nullable="true" MaxLength="125" Unicode="true" FixedLength="false" />
+        <Property Name="VarietyInfo" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="RevDate" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="DateEntered" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="LastUpdated" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="GM" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="GeneticModificationInfo" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="OriginCountry" Type="Edm.String" Nullable="true" MaxLength="50" Unicode="true" FixedLength="false" />
+        <Property Name="Season" Type="Edm.String" Nullable="true" MaxLength="20" Unicode="true" FixedLength="false" />
+        <Property Name="Seasonal" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Climate" Type="Edm.String" Nullable="true" MaxLength="50" Unicode="true" FixedLength="false" />
+        <Property Name="CommodityType" Type="Edm.String" Nullable="true" MaxLength="30" Unicode="true" FixedLength="false" />
+        <Property Name="Image1" Type="Edm.String" Nullable="true" MaxLength="50" Unicode="true" FixedLength="false" />
+        <Property Name="Image2" Type="Edm.String" Nullable="true" MaxLength="50" Unicode="true" FixedLength="false" />
+        <Property Name="Image3" Type="Edm.String" Nullable="true" MaxLength="50" Unicode="true" FixedLength="false" />
+        <Property Name="Image4" Type="Edm.String" Nullable="true" MaxLength="50" Unicode="true" FixedLength="false" />
+        <Property Name="InfoURL1" Type="Edm.String" Nullable="true" MaxLength="150" Unicode="true" FixedLength="false" />
+        <Property Name="InfoURL2" Type="Edm.String" Nullable="true" MaxLength="150" Unicode="true" FixedLength="false" />
+        <Property Name="InfoURL3" Type="Edm.String" Nullable="true" MaxLength="150" Unicode="true" FixedLength="false" />
+        <Property Name="InfoURL4" Type="Edm.String" Nullable="true" MaxLength="150" Unicode="true" FixedLength="false" />
+        <Property Name="UpdatedByUserID" Type="Edm.String" Nullable="true" MaxLength="150" Unicode="true" FixedLength="false" />
+        <Property Name="GovernmentRestricted" Type="Edm.Boolean" Nullable="true" />
+        <Property Name="Publish" Type="Edm.Boolean" Nullable="true" />
+      </EntityType>
+    </Schema>
+    <Schema Namespace="TopCarrotWCFServiceWebRole" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityContainer Name="TopCarrotEntities" p7:LazyLoadingEnabled="true" m:IsDefaultEntityContainer="true" xmlns:p7="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntitySet Name="CommodityPluCodes" EntityType="TopCarrotModel.CommodityPluCode" />
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

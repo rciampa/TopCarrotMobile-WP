@@ -1,0 +1,65 @@
+﻿<phone:PhoneApplicationPage 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:TopCarrotMobile.AppCode"
+	mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+	x:Class="TopCarrotMobile.Settings"
+	FontFamily="{StaticResource PhoneFontFamilyNormal}"
+	FontSize="{StaticResource PhoneFontSizeNormal}"
+	Foreground="{StaticResource PhoneForegroundBrush}"
+	Orientation="Portrait"
+	shell:SystemTray.IsVisible="True" shell:SystemTray.Opacity="0" 
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit">
+    <phone:PhoneApplicationPage.Resources>
+        <local:MobileAppSettings x:Key="appSettings"></local:MobileAppSettings>
+    </phone:PhoneApplicationPage.Resources>
+    
+    <phone:PhoneApplicationPage.ApplicationBar>
+		<shell:ApplicationBar Opacity="0.25"  Mode="Minimized">
+			<shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem x:Name="menBtnSettingsHelp" Text="settigns help" IsEnabled="True" Click="menBtnSettingsHelp_Click" />
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+	</phone:PhoneApplicationPage.ApplicationBar>
+
+	<!--LayoutRoot is the root grid where all page content is placed-->
+	<Grid x:Name="LayoutRoot">
+		<Grid.Background>
+			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+				<GradientStop Color="#FF1FC411" Offset="0"/>
+				<GradientStop Color="#FFEDF3ED" Offset="1"/>
+			</LinearGradientBrush>
+		</Grid.Background>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		
+		<!--TitlePanel contains the name of the application and page title-->
+		<StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+			<TextBlock x:Name="ApplicationTitle" Text="Top Carrot" Style="{StaticResource PhoneTextNormalStyle}"/>
+			<TextBlock x:Name="PageTitle" Text="Settings" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+		</StackPanel>
+
+		<!--ContentPanel - place additional content here-->
+		<Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer>
+                <StackPanel>
+                    <toolkit:ToggleSwitch Name="togMarketInfoService" Header="Market Information Service" Height="111" Width="458" SwitchForeground="#FFFF9845" Background="#FF144FFF" FontSize="32" IsChecked="{Binding Source={StaticResource appSettings}, Path=MarketInfoServiceToggle, Mode=TwoWay}" />
+                    <toolkit:ToggleSwitch Name="togRoadSideStandService" Header="Roadside Stand Service" Height="111" Width="458" SwitchForeground="#FFFF9845" Background="#FF144FFF" IsChecked="{Binding Source={StaticResource appSettings}, Path=RoadStandServiceToggle, Mode=TwoWay}" />
+                    <toolkit:ToggleSwitch Name="togFavoritesSync" Header="Favorites Sync" Height="111" Width="458" SwitchForeground="#FFFF9845" Background="#FF144FFF" IsChecked="{Binding Source={StaticResource appSettings}, Path=FavoritesSyncToggle, Mode=TwoWay}" />
+                    <toolkit:ToggleSwitch Name="togNotifications" Header="Notifications" Height="111" Width="458" SwitchForeground="#FFFF9845" Background="#FF144FFF" IsChecked="{Binding Source={StaticResource appSettings}, Path=NotificationsToggle, Mode=TwoWay}" />
+                    <TextBlock Height="30" HorizontalAlignment="Left" Margin="10,10,0,0" Name="txtblkNotificationLevel" Text="Notification level:" VerticalAlignment="Top" />
+                    <Slider Name="sldrNotificationLevel" Width="458" Height="Auto" Margin="0,10,10,0" SmallChange="1" LargeChange="5" IsEnabled="{Binding ElementName=togNotifications, Path=IsChecked}" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Background="White" Foreground="#FFFF9845" ValueChanged="sldrNotificationLevel_ValueChanged" Maximum="20" Value="{Binding Path=NotificationLevelSlider, Mode=TwoWay, Source={StaticResource appSettings}}" />
+                    <toolkit:ToggleSwitch Name="togTrackAreaFarmersMarkets" Header="Area Famers Markets Tracking" Height="111" Width="458" SwitchForeground="#FFFF9845" Background="#FF144FFF" IsChecked="{Binding Source={StaticResource appSettings}, Path=TrackFarmersMarketsToggle, Mode=TwoWay}" />
+                    <toolkit:ToggleSwitch Name="togTrackAreaMarkets" Header="Area Market Tracking" Height="111" Width="458" SwitchForeground="#FFFF9845" Background="#FF144FFF" IsChecked="{Binding Source={StaticResource appSettings}, Path=TrackAreaMarketsToggle, Mode=TwoWay}" />
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+        </Grid>
+</phone:PhoneApplicationPage>

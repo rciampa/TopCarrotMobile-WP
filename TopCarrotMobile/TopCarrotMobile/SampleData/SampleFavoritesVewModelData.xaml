@@ -1,0 +1,18 @@
+﻿<local:FavoritesViewModel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:TopCarrotMobile"
+    SampleProperty="Sample Text Property Value">
+    <local:FavoritesViewModel.MyFavorites>
+        <local:FavoritesModel Id="1" PluId="341" Plu="3001" Name="Asparugus" Variety="------------------"  Description="Senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend" Size="Small" ImageUri=""/>
+        <local:FavoritesModel Id="2" PluId="567" Plu="4659" Name="Oranges" Variety="------------------"  Description="Accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat" Size="Small" ImageUri=""/>
+        <local:FavoritesModel Id="99" PluId="286" Plu="2008" Name="Grapes" Variety="------------------"  Description="Pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum" Size="Small" ImageUri=""/>
+        <local:FavoritesModel Id="25" PluId="982" Plu="5648" Name="Tomatos" Variety="------------------"  Description="ksdfhsdfhlsdkjflkdsjfhlskdfhldskhf" Size="Small" ImageUri=""/>
+        <local:FavoritesModel Id="58" PluId="1235" Plu="6974" Name="Bananas" Variety="------------------"  Description="ksdfhsdfhlsdkjflkdsjfhlskdfhldskhf" Size="Small" ImageUri=""/>
+        <local:FavoritesModel Id="12" PluId="1258" Plu="3687" Name="Letus" Variety="------------------"  Description="ksdfhsdfhlsdkjflkdsjfhlskdfhldskhf" Size="Small" ImageUri=""/>
+        <local:FavoritesModel Id="52" PluId="687" Plu="6894" Name="Broccoli" Variety="------------------"  Description="ksdfhsdfhlsdkjflkdsjfhlskdfhldskhf" Size="Small" ImageUri=""/>
+        <local:FavoritesModel Id="87" PluId="689" Plu="2879" Name="Carrots" Variety="------------------"  Description="Accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat" Size="Small" ImageUri=""/>
+        <local:FavoritesModel Id="56" PluId="348" Plu="2358" Name="Cucumber" Variety="------------------"  Description="ksdfhsdfhlsdkjflkdsjfhlskdfhldskhf" Size="Small" ImageUri=""/>
+        <local:FavoritesModel Id="15" PluId="105" Plu="3021" Name="Spinch" Variety="------------------"  Description="ksdfhsdfhlsdkjflkdsjfhlskdfhldskhf" Size="Small" ImageUri=""/>
+    </local:FavoritesViewModel.MyFavorites>
+</local:FavoritesViewModel>

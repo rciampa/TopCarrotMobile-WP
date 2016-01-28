@@ -1,0 +1,18 @@
+<local:HereLocationViewModel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:TopCarrotMobile"
+    SampleProperty="Sample Text Property Value">
+    <local:HereLocationViewModel.MyHereLocationData>
+        <local:HereModel PluId="341" Plu="3001" Name="Asparugus" CropId="CA8974983469" Variety="------------------"  Description="Senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend" Size="Small" ImageUri="/TopCarrotMobile;component/Media/Images/tcmNoImage1.png"/>
+        <local:HereModel PluId="567" Plu="4659" Name="Oranges" CropId="AZ89745873489" Variety="------------------"  Description="Accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat" Size="Small" ImageUri="/TopCarrotMobile;component/Media/Images/tcmNoImage1.png"/>
+        <local:HereModel PluId="286" Plu="2008" Name="Grapes" CropId="CA89774983469" Variety="------------------"  Description="Pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum" Size="Small" ImageUri="/TopCarrotMobile;component/Media/Images/tcmNoImage1.png"/>
+        <local:HereModel PluId="982" Plu="5648" Name="Tomatos" CropId="ID3974983469" Variety="------------------"  Description="ksdfhsdfhlsdkjflkdsjfhlskdfhldskhf" Size="Small" ImageUri="/TopCarrotMobile;component/Media/Images/tcmNoImage1.png"/>
+        <local:HereModel PluId="1235" Plu="6974" Name="Bananas" CropId="CA8574983469" Variety="------------------"  Description="ksdfhsdfhlsdkjflkdsjfhlskdfhldskhf" Size="Small" ImageUri="/TopCarrotMobile;component/Media/Images/tcmNoImage1.png"/>
+        <local:HereModel PluId="1258" Plu="3687" Name="Letus" CropId="WA8976683469" Variety="------------------"  Description="ksdfhsdfhlsdkjflkdsjfhlskdfhldskhf" Size="Small" ImageUri="/TopCarrotMobile;component/Media/Images/tcmNoImage1.png"/>
+        <local:HereModel PluId="687" Plu="6894" Name="Broccoli" CropId="CA8994983469" Variety="------------------"  Description="ksdfhsdfhlsdkjflkdsjfhlskdfhldskhf" Size="Small" ImageUri="/TopCarrotMobile;component/Media/Images/tcmNoImage1.png"/>
+        <local:HereModel PluId="689" Plu="2879" Name="Carrots" CropId="TX8978883469" Variety="------------------"  Description="Accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat" Size="Small" ImageUri="/TopCarrotMobile;component/Media/Images/tcmNoImage1.png"/>
+        <local:HereModel PluId="348" Plu="2358" Name="Cucumber" CropId="IA8900983469" Variety="------------------"  Description="ksdfhsdfhlsdkjflkdsjfhlskdfhldskhf" Size="Small" ImageUri="/TopCarrotMobile;component/Media/Images/tcmNoImage1.png"/>
+        <local:HereModel PluId="105" Plu="3021" Name="Spinch" CropId="CA8976583469" Variety="------------------"  Description="ksdfhsdfhlsdkjflkdsjfhlskdfhldskhf" Size="Small" ImageUri="/TopCarrotMobile;component/Media/Images/tcmNoImage1.png"/>
+    </local:HereLocationViewModel.MyHereLocationData>
+</local:HereLocationViewModel>

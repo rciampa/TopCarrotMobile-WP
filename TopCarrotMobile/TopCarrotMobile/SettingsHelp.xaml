@@ -1,0 +1,77 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="TopCarrotMobile.SettingsHelp"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+    <phone:PhoneApplicationPage.Resources>
+       
+    </phone:PhoneApplicationPage.Resources>
+        <!--LayoutRoot contains the root grid where all other page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="{StaticResource AppRootGridBrush}">
+        <controls:Panorama Title="settings" Name="panaSettingsHelp">
+
+            <!--Panorama item one-->
+            <controls:PanoramaItem Header="market info" >
+                <Grid>
+                    <ScrollViewer Height="Auto" HorizontalAlignment="Left" Margin="3,2,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="413" MinHeight="600">
+                        <StackPanel Height="Auto" Name="stackPanel1">
+                            <TextBlock Height="Auto" Name="textBlock1" Text="Market Information Service: " TextWrapping="Wrap" FontSize="32" />
+                            <TextBlock Height="Auto" Name="textBlock2" Text="Useful when shopping at your local supermarket or local grocer store. You can find detailed crop information from millions of farmers that are part of Top Carrot. With market information service you no longer have to go to the local market to see what produce is on hand and like never before know where it came from and what agricultural chemicals were used from produce them. With market information service Top Carrot can simply tell you where the produce that meets your personal or families needs. How it works, just turn on the service from the settings window and let Top Carrot do the rest. Your phone will track the locations that you frequent and start to provide you with information on markets in those areas." TextWrapping="Wrap" Padding="0,10,0,0" />
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </controls:PanoramaItem>
+
+            <!--Panorama item two-->
+            <controls:PanoramaItem Header="roadside">
+                <Grid>
+                    <ScrollViewer Height="Auto" HorizontalAlignment="Left" Margin="3,2,0,0" Name="scrollViewer2" VerticalAlignment="Top" Width="413" MinHeight="600">
+                        <StackPanel Height="Auto" Name="stackPanel2">
+                            <TextBlock Height="Auto" Name="textBlock3" Text="Roadside Stand Service: " TextWrapping="Wrap" FontSize="32" />
+                            <TextBlock Height="Auto" Name="textBlock4" Text="Perfect when your on a road trip or just out for a drive on a great day through farmland.The roadside stand will help you find famrers that have constructed a simple stand (or even a shack) where they sell produce and fruit directly from the farm. Roadside stand service will alert you to a stand along your jouney and give you the directions to that location, all by simply turning the service on in settings." TextWrapping="Wrap" Padding="0,10,0,0" />
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </controls:PanoramaItem>
+            <controls:PanoramaItem Header="favorites sync">
+                <Grid>
+                    <ScrollViewer Height="Auto" HorizontalAlignment="Left" Margin="3,2,0,0" Name="scrollViewer3" VerticalAlignment="Top" Width="413" MinHeight="600">
+                        <StackPanel Height="Auto" Name="stackPanel3">
+                            <TextBlock Height="Auto" Name="textBlock5" Text="Favorites Syncronization: " TextWrapping="Wrap" FontSize="32" />
+                            <TextBlock Height="Auto" Name="textBlock6" Text="Use this feature so syncronize your favroties with the Top Carrot cloud and Top Carrot running on Windows 8. You may also use this servicce to backup your favorites to the cloud if you need to change mobile phones for some reason." TextWrapping="Wrap" Padding="0,10,0,0" />
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </controls:PanoramaItem>
+            <controls:PanoramaItem Header="notifications">
+                <Grid>
+                    <ScrollViewer Height="Auto" HorizontalAlignment="Left" Margin="3,2,0,0" Name="scrollViewer4" VerticalAlignment="Top" Width="413" MinHeight="600">
+                        <StackPanel Height="Auto" Name="stackPanel4">
+                            <TextBlock Height="Auto" Name="textBlock7" Text="Mobile Notifications: " TextWrapping="Wrap" FontSize="32" />
+                            <TextBlock Height="Auto" Name="textBlock8" Text="There are four levels of notification besides being able to turn notifications off completely. The lowest level is 'Food Saftey Only'" TextWrapping="Wrap" Padding="0,10,0,0" />
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </controls:PanoramaItem>
+            <controls:PanoramaItem Header="farmers" HorizontalContentAlignment="Stretch">
+                <Grid />
+            </controls:PanoramaItem>
+            <controls:PanoramaItem Header="markets">
+                <Grid />
+            </controls:PanoramaItem>
+        </controls:Panorama>
+    </Grid>
+
+    <!--Panorama-based applications should not show an ApplicationBar-->
+
+</phone:PhoneApplicationPage>
